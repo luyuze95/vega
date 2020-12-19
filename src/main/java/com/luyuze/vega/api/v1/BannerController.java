@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("banner")
-public class  BannerController {
+public class BannerController {
 
     @GetMapping("/hello")
     public String test() {
-        return "hello,陆宇泽111";
+        return "hello";
     }
 }
