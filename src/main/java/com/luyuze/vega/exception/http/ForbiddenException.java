@@ -1,7 +1,5 @@
 package com.luyuze.vega.exception.http;
 
-import lombok.Data;
-
 public class ForbiddenException extends HttpException {
 
     public ForbiddenException(int code) {
