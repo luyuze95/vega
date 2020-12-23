@@ -2,6 +2,9 @@ package com.luyuze.vega.core;
 
 import lombok.Data;
 
+/**
+ * 异常统一返回实体
+ */
 @Data
 public class UnifyResponse {
 
