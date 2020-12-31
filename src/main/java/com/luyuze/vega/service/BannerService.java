@@ -1,6 +1,8 @@
 package com.luyuze.vega.service;
 
+import com.luyuze.vega.model.Banner;
+
 public interface BannerService {
 
-    void getByName(String name);
+    Banner getByName(String name);
 }

@@ -3,7 +3,7 @@ spring:
     active: dev
   jpa:
     hibernate:
-      ddl-auto: none # 关闭jpa的自动生成表
+      ddl-auto: create-drop # 关闭jpa的自动生成表
 
 vega:
   api-package: com.luyuze.vega.api

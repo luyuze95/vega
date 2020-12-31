@@ -2,6 +2,7 @@ package com.luyuze.vega.api.v1;
 
 import com.luyuze.vega.dto.PersonDTO;
 import com.luyuze.vega.exception.http.ForbiddenException;
+import com.luyuze.vega.model.Banner;
 import com.luyuze.vega.service.BannerService;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
@@ -27,7 +28,8 @@ public class BannerController {
     }
 
     @GetMapping("name/{name}")
-    public void getByName(@PathVariable @NotNull String name) {
-
+    public Banner getByName(@PathVariable @NotNull String name) {
+        Banner banner = bannerService.getByName(name);
+        return banner;
     }
 }
